@@ -172,7 +172,7 @@ class TranslationField:
 
         # Copy the verbose name and append a language suffix
         # (will show up e.g. in the admin).
-        self.verbose_name = build_localized_verbose_name(translated_field.verbose_name, language)
+        self.verbose_name = trans_opts.get_verbose_name(translated_field.verbose_name, language)
 
         if self.remote_field:
             clear_ForeignObjectRel_caches(self.remote_field)
