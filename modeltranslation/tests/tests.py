@@ -280,7 +280,7 @@ class ModeltranslationTest(ModeltranslationTestBase):
         verbose_name = models.CustomVerboseNameModel._meta.get_field("title_de").verbose_name
         assert verbose_name == "(de) title"
 
-    def test_custom_verbose_name(self):
+    def test_custom_verbose_name_plural(self):
         verbose_name = models.CustomVerboseNameModel._meta.get_field("title_de").verbose_name_plural
         assert verbose_name == "(de) title"
 

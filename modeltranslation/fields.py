@@ -16,7 +16,6 @@ from modeltranslation.thread_context import fallbacks_enabled
 from modeltranslation.utils import (
     build_localized_fieldname,
     build_localized_intermediary_model,
-    build_localized_verbose_name,
     get_language,
     resolution_order,
 )
