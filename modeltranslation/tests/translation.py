@@ -231,7 +231,8 @@ class CustomVerboseNameModelTranslationOptions(TranslationOptions):
     fields = ("title",)
 
     def get_verbose_name(self, verbose_name, language):
-        return f'({language}) {verbose_name}'
+        return f"({language}) {verbose_name}"
+
 
 # ######### TranslationOptions field inheritance testing
 
@@ -256,6 +257,7 @@ class FieldInheritanceETranslationOptions(
     FieldInheritanceCTranslationOptions, FieldInheritanceDTranslationOptions
 ):
     fields = ["titlee"]
+
 
 # ######### Integration testing
 

@@ -170,7 +170,7 @@ class TranslationOptions(metaclass=FieldsAggregationMetaClass):
         Return name of all fields that can be used in filtering.
         """
         return list(self.all_fields.keys()) + self.related_fields
-    
+
     def get_verbose_name(self, verbose_name, language):
         return build_localized_verbose_name(verbose_name, language)
 
